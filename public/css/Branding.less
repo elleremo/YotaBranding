@@ -1,39 +1,35 @@
 html body.yota-branding {
   background: #00aeef;
 
-
-  .site__header{
+  .site__header {
     &::before,
-    &::after{
+    &::after {
       z-index: 0;
     }
   }
 
-  .header__nav-menu{
+  .header__nav-menu {
     &::before,
-    &::after{
+    &::after {
       z-index: 0;
     }
   }
 
-
-
-  .header__nav-menu, .header__nav-menu .menu{
+  .header__nav-menu, .header__nav-menu .menu {
     position: relative;
   }
 
-
-  &.singular .site__main{
+  &.singular .site__main {
     padding-top: 0;
     border-radius: 20px;
   }
 
   &.page.wooden_bg,
-  &.single-post.wooden_bg{
+  &.single-post.wooden_bg {
     background: #00aeef;
   }
 
-  .site__wrap{
+  .site__wrap {
     background: #00aeef;
   }
 
@@ -51,7 +47,7 @@ html body.yota-branding {
     }
   }
 
-  .paginator__wrapper{
+  .paginator__wrapper {
     background-color: #fff;
   }
 
@@ -61,11 +57,25 @@ html body.yota-branding {
     margin: 20px 0;
   }
 
-  .site__main{
+  .site__main {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
   }
 
+  &.search-results,
+  &.archive {
+    .content__area > .base__container {
+      background-color: #fff;
+      padding: 39px 30px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+  }
+
+  &.profile-page .article___content{
+    overflow: hidden;
+    border-radius: 20px;
+  }
 
 }
 
