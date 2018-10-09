@@ -24,8 +24,8 @@ use YotaBranding\Autoloader;
 new Autoloader(__FILE__, 'YotaBranding');
 
 use YotaBranding\Base\Wrap;
-use YotaBranding\Classes\Banner;
-use YotaBranding\Classes\Reset;
+use YotaBranding\Classes\Relay;
+
 
 class YotaBranding extends Wrap
 {
@@ -33,9 +33,7 @@ class YotaBranding extends Wrap
 
     function __construct()
     {
-
-        new Banner();
-        new Reset();
+        new Relay();
     }
 
 }
