@@ -31,7 +31,7 @@ class Reset
     {
 
         $this->addCss(
-            "Yota-branding-style",
+            "Yota-reset-style",
             "header",
             [],
             '1.0.0',

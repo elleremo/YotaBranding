@@ -11,7 +11,14 @@ class Banner
 
     public function __construct()
     {
-        add_action('BroDude__theme-main-before', [$this, 'image']);
+        $this->addCss(
+                "Yota-banner-style",
+                'header',
+                [],
+            '1.0.0',
+            $this->url() . $this->css_patch . "Banner.css"
+        );
+        add_action('BroDude__theme-content-area-before', [$this, 'image']);
     }
 
     public function image()
@@ -19,7 +26,7 @@ class Banner
         ?>
         <div class="yota-banner__wrapper">
             <div class="yota-banner__wrap">
-                <img class="yota-banner__image" src="<?php echo $this->url() . "images/home.php"; ?>"/>
+                <img class="yota-banner__image" src="<?php echo $this->url() . "public/images/banner.png"; ?>"/>
             </div>
         </div>
         <?php
