@@ -33,6 +33,7 @@ class YotaBranding extends Wrap
 
     function __construct()
     {
+
         new Banner();
         new Reset();
     }

@@ -9,6 +9,8 @@ class Banner
 {
     use Assets;
 
+    public $banner_url='http://www.yota.ru/voice?utm_source=brodude&utm_medium=branding&utm_campaign=yota_brandig&utm_content=top_banner&utm_term=voice';
+
     public function __construct()
     {
         $this->addCss(
@@ -24,11 +26,15 @@ class Banner
     public function image()
     {
         ?>
-        <div class="yota-banner__wrapper">
+        <a
+                href="<?php echo $this->banner_url;?>"
+                target="_blank"
+                rel="noopener"
+                class="yota-banner__wrapper">
             <div class="yota-banner__wrap">
                 <img class="yota-banner__image" src="<?php echo $this->url() . "public/images/banner.png"; ?>"/>
             </div>
-        </div>
+        </a>
         <?php
     }
 }

@@ -1,6 +1,37 @@
 html body.yota-branding {
-
   background: #00aeef;
+
+
+  .site__header{
+    &::before,
+    &::after{
+      z-index: 0;
+    }
+  }
+
+  .header__nav-menu{
+    &::before,
+    &::after{
+      z-index: 0;
+    }
+  }
+
+
+
+  .header__nav-menu, .header__nav-menu .menu{
+    position: relative;
+  }
+
+
+  &.singular .site__main{
+    padding-top: 0;
+    border-radius: 20px;
+  }
+
+  &.page.wooden_bg,
+  &.single-post.wooden_bg{
+    background: #00aeef;
+  }
 
   .site__wrap{
     background: #00aeef;
