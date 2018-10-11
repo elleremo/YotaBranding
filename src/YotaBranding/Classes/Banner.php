@@ -32,7 +32,7 @@ class Banner
                 rel="noopener"
                 class="yota-banner__wrapper">
             <div class="yota-banner__wrap">
-                <img class="yota-banner__image" src="<?php echo $this->url() . "public/images/banner2x.png"; ?>"/>
+                <img class="yota-banner__image" src="<?php echo $this->url() . "public/images/banner.png"; ?>"/>
             </div>
         </a>
         <?php

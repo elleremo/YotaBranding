@@ -13,7 +13,7 @@ class Relay
     public function __construct()
     {
         if (isset($_REQUEST['branding']) && 'yota' == $_REQUEST['branding']) {
-            if(current_time('mysql') < "2018-10-30 13:49:05" ){
+            if(current_time('mysql') < "2018-10-15 13:49:05" ){
                 $this->router();
             }
         }
